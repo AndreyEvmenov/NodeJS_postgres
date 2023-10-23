@@ -1,0 +1,12 @@
+open follder "C:\Program Files\PostgreSQL\16\bin"
+run powershell
+run command:
+.\psql -U postgres
+
+at PostgreSQL:
+\l - list bases
+create database node_postgres;
+\connect node_postgres
+\dt - show tables
+psql \! chcp 1251 - change code page
+select * from users;
